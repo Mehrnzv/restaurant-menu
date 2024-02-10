@@ -1,0 +1,134 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_logo img {
+  width: 199px;
+  height: 57px;
+}
+
+.nav_links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav_links a {
+  color: var(--color-white);
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  position: relative;
+}
+
+.nav_links a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-white);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav_links a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.nav_btn {
+  display: flex;
+}
+
+.nav_btn div {
+  border: 0.8px solid var(--color-grey);
+  margin-inline: 2rem;
+}
+
+.nav_btn a {
+  font-family: var(--font-alt);
+  color: var(--color-white);
+}
+
+.nav_menu {
+  display: none;
+}
+
+.nav-icon {
+  cursor: pointer;
+}
+
+.close-icon {
+  font-size: 27px;
+  color: var(--color-golden);
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.nav_menu-container-links,
+.nav_menu-container-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  font-family: var(--font-base);
+}
+
+.nav_menu-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav_menu-container {
+  background: var(--color-black);
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.5s ease-in;
+}
+
+.nav_menu-width {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1050px) {
+  .nav_menu {
+    display: block;
+    position: relative;
+  }
+  .nav_links {
+    display: none;
+  }
+  .nav_menu-container-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav_btn {
+    display: none;
+  }
+  .nav_menu-container-btn {
+    display: flex;
+    margin-top: 1rem;
+  }
+  .close-icon {
+    right: 20px;
+  }
+}

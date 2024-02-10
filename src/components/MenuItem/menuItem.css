@@ -1,0 +1,36 @@
+.menu-title {
+  color: var(--color-golden);
+}
+
+.title-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.menu-line {
+  width: 100px;
+  height: 1px;
+  background-color: var(--color-golden);
+  margin-inline: 1.5rem;
+}
+
+.menu-price-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu-price {
+  color: var(--color-white);
+}
+
+.menu-tags {
+  color: var(--color-grey);
+  font-family: var(--font-alt);
+}
+
+.menu_box {
+  margin-bottom: 1.5rem;
+}

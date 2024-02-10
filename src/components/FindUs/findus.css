@@ -1,0 +1,78 @@
+.findUs {
+  background-image: url('../../assets//background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.findUs .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+.findUs_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.findUs_content-text p:first-child {
+  color: var(--color-white);
+  font-family: var(--font-base);
+  font-size: 1.25rem;
+}
+
+.findUs_content-text h1 {
+  color: var(--color-golden);
+  font-family: var(--font-base);
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.findUs_content-text p:nth-child(4) {
+  color: var(--color-grey);
+  font-family: var(--font-alt);
+  margin-top: 2rem;
+}
+
+.findUs_content-info {
+  margin-top: 1.5rem;
+}
+
+.findUs_content-info p:first-child {
+  color: var(--color-golden);
+  font-family: var(--font-base);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+
+.findUs-hours {
+  color: var(--color-white);
+  font-family: var(--font-alt);
+  margin-bottom: 0.5rem;
+}
+
+.findUs_content-info button {
+  margin-top: 2rem;
+}
+
+.findUs_image img {
+  width: 400px;
+}
+
+@media screen and (max-width: 1050px) {
+  .findUs{
+    padding-block: 6rem;
+  }
+  .findUs .container {
+    flex-direction: column;
+  }
+  .findUs_image img {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+}

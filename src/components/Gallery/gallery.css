@@ -1,0 +1,141 @@
+.gallery {
+  background-image: url('../../assets//background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 2rem;
+}
+
+.gallery .container-navv {
+  display: flex;
+  align-items: center;
+}
+
+.gallery_content {
+  width: 50%;
+  padding-inline: 2rem;
+}
+
+.gallery_content p:first-child {
+  color: var(--color-white);
+  font-family: var(--font-base);
+  font-size: 1.25rem;
+}
+
+.gallery_content h1 {
+  color: var(--color-golden);
+  font-weight: 500;
+  font-family: var(--font-base);
+  font-size: 3rem;
+}
+
+.gallery_content p:nth-child(4) {
+  color: var(--color-grey);
+  font-family: var(--font-alt);
+  padding-block: 1rem;
+}
+
+.gallery_content button {
+  background-color: var(--color-golden);
+  font-family: var(--font-base);
+  font-weight: 700;
+  color: var(--color-black);
+  border: none; 
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+
+.gallery_images {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  max-width: 50%;
+  position: relative;
+}
+
+.gallery_images-con {
+  display: flex;
+  width: max-content;
+  overflow-x: scroll;
+  
+  scrollbar-width: none;  
+}
+
+.gallery_images-con::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery_images-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-width: 200px;
+  height: 300px;
+  margin-right: 2rem;
+}
+
+.gallery_images-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.gallery_images-icon {
+  position: absolute;
+  color: #fff;
+  font-size: 2rem;
+  opacity: 0;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.gallery_images-card:hover img {
+  opacity: .35;
+}
+
+.gallery_images-card:hover .gallery_images-icon {
+  opacity: 1;
+}
+
+.gallery_images-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+}
+
+.gallery_arrow-icon {
+  color: var(--color-golden);
+  font-size: 2rem;
+  cursor: pointer;
+  background: var(--color-black);
+  border-radius: 5px;
+}
+
+.gallery_arrow-icon:hover {
+  color: var(--color-white);
+}
+
+@media screen and (max-width: 1050px) {
+  .gallery .container-navv {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .gallery_content {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+  .gallery_images {
+    max-width: 100%;
+  }
+  .gallery-images-card {
+    min-width: 240px;
+    height: 320px;
+}
+}

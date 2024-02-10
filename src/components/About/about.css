@@ -1,0 +1,68 @@
+.about {
+  background-image: url('../../assets/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 2rem;
+}
+
+.about .container {
+  background-image: url('../../assets/G.png');
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6.5rem;
+  min-height: 100vh;
+}
+
+.about_text-title {
+  color: var(--color-golden);
+  font-family: var(--font-base);
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.about_knife img {
+  width: 80px;
+}
+
+.about_text-desc {
+  color: var(--color-grey);
+  font-family: var(--font-alt);
+  margin-block: 1.5rem;
+}
+
+.about_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.about_left .about_text-desc {
+  text-align: end;
+}
+
+.about_left img {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1050px) {
+  .about {
+    padding-block: 4rem;
+  }
+  .about .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about .container {
+    background-size: 200px;
+  }
+  .about_knife {
+    width: 50px;
+  }
+}

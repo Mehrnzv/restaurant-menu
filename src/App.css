@@ -1,0 +1,30 @@
+.container-nav {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.navHero_bg {
+  background: var(--color-black);
+}
+
+.custom_btn {
+  background-color: var(--color-golden);
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-weight: 700;
+  border: none;
+  outline: none;
+  padding: .5rem 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+}
