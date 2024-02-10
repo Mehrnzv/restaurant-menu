@@ -34,7 +34,6 @@
 
 .newsletter_input input {
   width: 50%;
-  min-width: 200px;
   background-color: transparent;
   border: 1px solid var(--color-white);
   color: var(--color-white);

@@ -20,9 +20,9 @@ const Footer = () => {
           <p>&quot;The best way to find yourself is to lose yourself in the service of others.&quot;</p>
           <img src={spoon} alt='spoon'/>
           <div className='social-media'>
-            <FiFacebook color='#fff' size={20}  />
-            <FiTwitter color='#fff' size={20} />
-            <FiInstagram color='#fff' size={20} />
+            <FiFacebook className='social-media_icon' color='#fff' size={20}  />
+            <FiTwitter className='social-media_icon' color='#fff' size={20} />
+            <FiInstagram className='social-media_icon' color='#fff' size={20} />
           </div>
         </div>
 

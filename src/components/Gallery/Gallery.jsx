@@ -22,7 +22,7 @@ const Gallery = () => {
 
   return (
     <div className='gallery'>
-      <div className='container-navv'>
+      <div className='container-gal'>
         <div className='gallery_content'>
           <p>Instagram</p>
           <img src={spoon} alt=''/>
